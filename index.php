@@ -71,7 +71,7 @@
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $servername = "localhost";
             $username = "sajan";
-            $password = "lamp";
+            $password = "redhat";
             $dbname = "sajan_db";
 
             // Create connection
