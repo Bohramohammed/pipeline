@@ -64,7 +64,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Contact Us</h1>
+        <h1>Contact me</h1>
         <?php
         $show_message = false; // Flag to control display of the message
 
