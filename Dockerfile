@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-RUN  apt-get install -y apache2
+RUN install -y apache2
 
 COPY ./* /var/www/html/
 
