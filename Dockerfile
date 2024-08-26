@@ -1,7 +1,7 @@
 # Use the official httpd (Apache) image as the base image
 FROM httpd:2.4
 
-LABEL maintainer="your-email@example.com"
+LABEL maintainer="mohammed@gmail.com"
 
 # Copy your website's files into the Apache document root
 COPY ./* /usr/local/apache2/htdocs/
