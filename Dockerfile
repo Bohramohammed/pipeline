@@ -1,14 +1,10 @@
-# Use the official Ubuntu image as the base image
-FROM ubuntu:20.04
+# Use the official httpd (Apache) image as the base image
+FROM httpd:2.4
 
-# Update the package list and install Apache2
-RUN apt-get update && apt-get install -y apache2
-
-# Copy the contents of the current directory to the Apache web root directory
-COPY . /var/www/html/
+# Copy your website's files into the Apache document root
+COPY ./index.html /usr/local/apache2/htdocs/
 
 # Expose port 80 to allow web traffic
 EXPOSE 80
 
-# Start the Apache2 server in the foreground
-CMD ["apache2ctl", "-D", "FOREGROUND"]
+# No need for CMD since it's already defined in the httpd image
